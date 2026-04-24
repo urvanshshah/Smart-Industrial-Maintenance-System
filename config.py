@@ -106,8 +106,8 @@ AE_LATENT_DIM = max(16, AE_HIDDEN_DIM // 2)
 AE_NUM_LAYERS = 2
 AE_DROPOUT = 0.2
 AE_LEARNING_RATE = 1e-3
-AE_EPOCHS = 100
-AE_BATCH_SIZE = 64
+AE_EPOCHS = 40
+AE_BATCH_SIZE = 256
 
 # Threshold strategy: "f1_optimal" tunes against true near-failure labels on
 # the validation set; "sigma" falls back to mean + AE_ANOMALY_THRESHOLD_SIGMA
@@ -122,8 +122,8 @@ PRED_HIDDEN_DIM = 256
 PRED_NUM_LAYERS = 3
 PRED_DROPOUT = 0.4
 PRED_LEARNING_RATE = 1e-3
-PRED_EPOCHS = 50
-PRED_BATCH_SIZE = 128            # Larger batch — exploits GPU + improves stability
+PRED_EPOCHS = 20
+PRED_BATCH_SIZE = 256            # Larger batch — exploits GPU + improves stability
 PRED_FAILURE_HORIZON = 30        # Predict failure within h cycles
 
 # Imbalanced-classification objective: "focal" (focal loss, γ = PRED_FOCAL_GAMMA)

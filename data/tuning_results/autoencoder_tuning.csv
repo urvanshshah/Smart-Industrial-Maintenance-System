@@ -1,0 +1,3 @@
+batch_size,epochs,train_loss_final,val_loss_best,anomaly_threshold,test_anomaly_rate,training_time_sec,error
+256,20,0.03931653,0.05909661,0.00030113,0.759208,114.2,
+256,40,0.03609059,0.05460165,0.0003032,0.757594,218.4,
